@@ -1,0 +1,81 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+# Author Shofiul Alam
+# Copyright (c) 2011-present Toolmateshire Software Team. All rights reserved.
+# See https://toolmateshire.com.au/license.html for license details.
+
+XLite\Model\Config:
+  - name: permissions_manager
+    category: Shofi\PermissionsManager
+    type: XLite\Module\XC\MultiVendor\View\FormField\Select\MultiVendorMode
+    orderby: 100
+    value: W
+    translations:
+      - code: en
+        option_name: Permissions Manager
+        option_comment: <strong>Permissions Manager</strong> modules created different permissions autometically during the installation.<br/><br/><strong>Creating permissions gives us opportunity to create different roles whis will be used when we create our business packages</strong>.
+      - code: ru
+        option_name: права доступа менеджера
+        option_comment: <strong>права доступа менеджера</strong>Модули созданы различные разрешения autometically во время установки</strong> Создание разрешений дает нам возможность создавать различные роли whis будет использоваться, когда мы создаем наши бизнес-пакеты.
+
+
+XLite\Model\Role\Permission:
+  - { code: "[business] manage business profile", section: Business, translations: [{ code: en, name: Manage business profile}] }
+  - { code: "[business] manage up to 2 photos", section: Business, translations: [{ code: en, name: Manage up to 2 photos}] }
+  - { code: "[business] manage up to 6 photos", section: Business, translations: [{ code: en, name: Manage up to 6 photos}] }
+  - { code: "[business] manage up to 10 photos", section: Business, translations: [{ code: en, name: Manage up to 10 photos}] }
+  - { code: "[business] manage up to 15 photos", section: Business, translations: [{ code: en, name: Manage up to 15 photos}] }
+  - { code: "[business] manage basic invoicing", section: Business, translations: [{ code: en, name: Manage basic invoicing}] }
+  - { code: "[business] manage highlight 3 tools", section: Business, translations: [{ code: en, name: Manage highlight 3 tools}] }
+  - { code: "[business] manage highlight 5 tools", section: Business, translations: [{ code: en, name: Manage highlight 5 tools}] }
+  - { code: "[business] manage highlight 8 tools", section: Business, translations: [{ code: en, name: Manage highlight 8 tools}] }
+  - { code: "[business] manage monthly reports", section: Business, translations: [{ code: en, name: Manage monthly reports}] }
+  - { code: "[business] manage phone supports", section: Business, translations: [{ code: en, name: Manage phone supports}] }
+  - { code: "[business] manage custom invoicing", section: Business, translations: [{ code: en, name: Manage custom invoicing}] }
+  - { code: "[business] manage PDF export", section: Business, translations: [{ code: en, name: Manage PDF export}] }
+  - { code: "[business] manage account setup services", section: Business, translations: [{ code: en, name: Manage account setup services}] }
+  - { code: "[business] manage mailchimp integration", section: Business, translations: [{ code: en, name: Manage mailchimp integration}] }
+  - { code: "[business] manage Xero integration", section: Business, translations: [{ code: en, name: Manage Xero integration}] }
+  - { code: "[business] manage feature 3 tools", section: Business, translations: [{ code: en, name: Manage feature 3 tools}] }
+  - { code: "[business] manage 5 category feature tools", section: Business, translations: [{ code: en, name: Manage category feature 5 tools}] }
+  - { code: "[business] manage 8 category feature tools", section: Business, translations: [{ code: en, name: Manage category feature 8 tools}] }
+  - { code: "[business] manage dedicated account manager", section: Business, translations: [{ code: en, name: Manage dedicated account manager}] }
+  - { code: "[business] manage white label invoicing", section: Business, translations: [{ code: en, name: Manage white label invoicing}] }
+  - { code: "[business] manage sms notification", section: Business, translations: [{ code: en, name: Manage sms notification}] }
+  - { code: "[business] manage email notification", section: Business, translations: [{ code: en, name: Manage email notification}] }
+  - { code: "[business] manage excel export", section: Business, translations: [{ code: en, name: Manage excel export}] }
+
+
+
+
+#XLite\Model\Role:
+#  - { translations: [{ code: en, name: Vendor }, { code: ru, name: "Продавец" }], permissions: [{ code: "[vendor] manage catalog" }, { code: "[vendor] manage orders" }, { code: "[vendor] manage shipping" }] }
+#
+#XLite\Model\LanguageLabel:
+#  - { name: "Vendors", translations: [{ code: en, label: "Vendors" }, { code: ru, label: "Продавцы" }] }
+#  - { name: "Vendor", translations: [{ code: en, label: "Vendor" }, { code: ru, label: "Продавец" }] }
+#
+#XLite\Model\Notification:
+#  - templatesDirectory: modules/XC/MultiVendor/order_advanced_changed
+#    availableForAdmin: true
+#    availableForCustomer: false
+#    enabledForAdmin: true
+#    enabledForCustomer: false
+#    adminHeaderEnabled: true
+#    adminGreetingEnabled: false
+#    adminSignatureEnabled: true
+#    customerHeaderEnabled: true
+#    customerGreetingEnabled: true
+#    customerSignatureEnabled: true
+#    translations:
+#      - code: en
+#        name: Order changed with advanced order management (for vendor)
+#        description: This message is sent to notify the vendor of any changes made to their order by an administrator using the advanced order management feature.
+#        adminSubject: Order has been changed
+#        adminText: Order has been changed.
+#      - code: ru
+#        name: Заказ изменен с помощью продвинутого редактирования заказов (для продавца)
+#        description: Данное уведомление используется для оповещения продавца об изменениях, внесенных в его заказ администратором с помощью функциональности продвинутого редактирования заказов.
+#        adminSubject: Заказ изменен
+#        adminText: Заказ был изменен.
